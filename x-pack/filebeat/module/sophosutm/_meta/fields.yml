@@ -1,0 +1,10 @@
+- key: sophosutm
+  title: "sophosutm"
+  description: >
+    sophosutm Module
+  fields:
+    - name: sophosutm
+      type: group
+      description: >
+        Module for parsing Sophos logs.
+      fields:

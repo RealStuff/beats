@@ -1,0 +1,246 @@
+[
+    {
+        "process" : {
+            "id" : "8643"
+          },
+          "log" : {
+            "original" : "<30>2020:07:10-16:28:25 ACME-w0ssf1-2 httpproxy[8643]: id=\"0001\" severity=\"info\" sys=\"SecureWeb\" sub=\"http\" name=\"http access\" action=\"pass\" method=\"CONNECT\" srcip=\"10.124.24.64\" dstip=\"23.50.105.218\" user=\"Alice\" group=\"G_S_Internet\" ad_domain=\"ACME\" statuscode=\"200\" cached=\"0\" profile=\"REF_HttProACME (PP_ACME)\" filteraction=\"REF_HttCffACME2 (FA_ACME)\" size=\"20392\" request=\"0xcc583c00\" url=\"https://sample.products.acme.com/\" referer=\"\" error=\"\" authtime=\"48\" dnstime=\"19023\" aptptime=\"103\" cattime=\"31199\" avscantime=\"0\" fullreqtime=\"40770052\" device=\"0\" auth=\"2\" ua=\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763\" exceptions=\"\" category=\"136\" reputation=\"neutral\" categoryname=\"Online Shopping\" application=\"ikea\" app-id=\"668\"",
+            "syslog" : {
+              "severity" : {
+                "name" : "info"
+              },
+              "priority" : "30"
+            }
+          },
+          "destination" : {
+            "ip" : "23.50.105.218"
+          },
+          "source" : {
+            "ip" : "10.124.24.64"
+          },
+          "error" : {
+            "message" : ""
+          },
+          "url" : {
+            "scheme" : "https",
+            "domain" : "sample.products.acme.com",
+            "full" : "https://sample.products.acme.com/"
+          },
+          "observer" : {
+            "hostname" : "ACME-w0ssf1-2",
+            "vendor" : "Sophos"
+          },
+          "sophosutm" : {
+            "firewall" : {
+              "sub" : "http",
+              "request" : "0xcc583c00",
+              "referer" : "",
+              "cattime" : "31199",
+              "auth" : "2",
+              "reputation" : "neutral",
+              "cached" : "0",
+              "authtime" : "48",
+              "dnstime" : "19023",
+              "group" : "G_S_Internet",
+              "fullreqtime" : "40770052",
+              "app-id" : "668",
+              "aptptime" : "103",
+              "avscantime" : "0",
+              "ad_domain" : "ACME",
+              "profile" : "REF_HttProACME (PP_ACME)",
+              "exceptions" : "",
+              "filteraction" : "REF_HttCffACME2 (FA_ACME)",
+              "size" : "20392",
+              "application" : "acme",
+              "name" : "http access",
+              "categoryname" : "Online Shopping",
+              "category" : "136",
+              "user" : "Alice",
+              "device" : "0"
+            }
+          },
+          "http" : {
+            "request" : {
+              "method" : "CONNECT",
+              "status_code" : "200"
+            }
+          },
+          "event" : {
+            "action" : "pass",
+            "code" : "0001",
+            "provider" : "httpproxy",
+            "module" : "SecureWeb"
+          },
+          "user_agent" : {
+            "name" : "Edge",
+            "original" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763",
+            "os" : {
+              "name" : "Windows",
+              "version" : "10",
+              "full" : "Windows 10"
+            },
+            "device" : {
+              "name" : "Other"
+            },
+            "version" : "18.17763"
+          },
+          "timestamp" : "2020-07-10T16:28:25.000Z"
+    },
+    {
+        "process" : {
+            "id" : "8643"
+          },
+          "log" : {
+            "original" : "<30>2020:07:01-11:42:29 testhost-1 httpproxy[8643]: id=\"0003\" severity=\"info\" sys=\"SecureWeb\" sub=\"http\" name=\"http access\" action=\"pass\" method=\"POST\" srcip=\"10.124.60.240\" dstip=\"\" user=\"\" group=\"\" ad_domain=\"\" statuscode=\"407\" cached=\"0\" profile=\"REF_HttProTest (PP_TEST)\" filteraction=\" ()\" size=\"2625\" request=\"0xbfc56a00\" url=\"http://go.microsoft.com/fwlink/?LinkID=123456&clcid=0x789\" referer=\"\" error=\"\" authtime=\"1\" dnstime=\"0\" aptptime=\"0\" cattime=\"0\" avscantime=\"0\" fullreqtime=\"248\" device=\"0\" auth=\"2\" ua=\"MICROSOFT_DEVICE_METADATA_RETRIEVAL_CLIENT\" exceptions=\"av,sandbox,fileextension\"",
+            "syslog" : {
+              "severity" : {
+                "name" : "info"
+              },
+              "priority" : "30"
+            }
+          },
+          "destination" : {
+            "ip" : ""
+          },
+          "source" : {
+            "ip" : "10.124.60.240"
+          },
+          "error" : {
+            "message" : ""
+          },
+          "url" : {
+            "path" : "/fwlink/",
+            "scheme" : "http",
+            "query" : "LinkID=123456&clcid=0x789",
+            "domain" : "go.microsoft.com",
+            "full" : "http://go.microsoft.com/fwlink/?LinkID=123456&clcid=0x789"
+          },
+          "observer" : {
+            "hostname" : "testhost-1",
+            "vendor" : "Sophos"
+          },
+          "sophosutm" : {
+            "firewall" : {
+              "fullreqtime" : "248",
+              "sub" : "http",
+              "request" : "0xbfc56a00",
+              "referer" : "",
+              "cattime" : "0",
+              "auth" : "2",
+              "aptptime" : "0",
+              "avscantime" : "0",
+              "ad_domain" : "",
+              "profile" : "REF_HttProTest (PP_TEST)",
+              "exceptions" : "av,sandbox,fileextension",
+              "filteraction" : " ()",
+              "size" : "2625",
+              "cached" : "0",
+              "authtime" : "1",
+              "name" : "http access",
+              "dnstime" : "0",
+              "user" : "",
+              "device" : "0",
+              "group" : ""
+            }
+          },
+          "http" : {
+            "request" : {
+              "method" : "POST",
+              "status_code" : "407"
+            }
+          },
+          "event" : {
+            "action" : "pass",
+            "code" : "0003",
+            "provider" : "httpproxy",
+            "module" : "SecureWeb"
+          },
+          "user_agent" : {
+            "name" : "Other",
+            "device" : {
+              "name" : "Other"
+            },
+            "original" : "MICROSOFT_DEVICE_METADATA_RETRIEVAL_CLIENT"
+          },
+          "timestamp" : "2020-07-01T11:42:29.000Z"
+    },
+    {
+        "log" : {
+            "original" : "<30>2020:07:10-16:28:25 ACME-w0ssf1-2 httpproxy[8643]: id=\"0060\" severity=\"info\" sys=\"SecureWeb\" sub=\"http\" name=\"web request blocked, forbidden category detected\" action=\"block\" method=\"POST\" srcip=\"10.124.0.12\" dstip=\"\" user=\"Bob\" group=\"\" ad_domain=\"ACME\" statuscode=\"403\" cached=\"0\" profile=\"REF_HttProACME (PP_ACME)\" filteraction=\"REF_HttCffFaACMEausna (FA_ACME_Ausnahmen)\" size=\"3529\" request=\"0xbf4e7800\" url=\"http://update.googleapis.com/service/update2?cup2key=10:12345&cup2hreq=8f0909090909090900909000\" referer=\"\" error=\"\" authtime=\"78\" dnstime=\"0\" aptptime=\"68\" cattime=\"67\" avscantime=\"0\" fullreqtime=\"11800\" device=\"0\" auth=\"2\" ua=\"Google Update/1.3.35.452;winhttp;cup-ecdsa\" exceptions=\"\" category=\"178\" reputation=\"neutral\" categoryname=\"Internet Services\" reason=\"category\"",
+            "syslog" : {
+              "severity" : {
+                "name" : "info"
+              },
+              "priority" : "30"
+            }
+          },
+          "destination" : {
+            "ip" : ""
+          },
+          "source" : {
+            "ip" : "10.124.0.12"
+          },
+          "error" : {
+            "message" : ""
+          },
+          "url" : {
+            "path" : "/service/update2",
+            "scheme" : "http",
+            "query" : "cup2key=10:12345&cup2hreq=8f0909090909090900909000",
+            "domain" : "update.googleapis.com",
+            "full" : "http://update.googleapis.com/service/update2?cup2key=10:12345&cup2hreq=8f0909090909090900909000"
+          },
+          "observer" : {
+            "hostname" : "ACME-w0ssf1-2",
+            "vendor" : "Sophos"
+          },
+          "sophosutm" : {
+            "firewall" : {
+              "fullreqtime" : "11800",
+              "sub" : "http",
+              "request" : "0xbf4e7800",
+              "referer" : "",
+              "reason" : "category",
+              "cattime" : "67",
+              "auth" : "2",
+              "aptptime" : "68",
+              "avscantime" : "0",
+              "ad_domain" : "ACME",
+              "profile" : "REF_HttProACME (PP_ACME)",
+              "reputation" : "neutral",
+              "exceptions" : "",
+              "filteraction" : "REF_HttCffFaACMEausna (FA_ACME_Ausnahmen)",
+              "size" : "3529",
+              "cached" : "0",
+              "authtime" : "78",
+              "name" : "web request blocked, forbidden category detected",
+              "dnstime" : "0",
+              "categoryname" : "Internet Services",
+              "category" : "178",
+              "user" : "Bob",
+              "device" : "0",
+              "group" : ""
+            }
+          },
+          "http" : {
+            "request" : {
+              "method" : "POST",
+              "status_code" : "403"
+            }
+          },
+          "event" : {
+            "action" : "block",
+            "code" : "0060",
+            "provider" : "httpproxy",
+            "module" : "SecureWeb"
+          },
+          "user_agent" : {
+            "name" : "Other",
+            "device" : {
+              "name" : "Spider"
+            },
+            "original" : "Google Update/1.3.35.452;winhttp;cup-ecdsa"
+          },
+          "timestamp" : "2020-07-10T16:28:25.000Z"
+    }
+]

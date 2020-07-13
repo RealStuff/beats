@@ -1,0 +1,69 @@
+- name: firewall
+  type: group
+  release: beta
+  default_field: false
+  description: >
+    Module for parsing Sophos UTM logs.
+  fields:
+    - name: ad_domain
+      type: keyword
+
+    - name: aptptime
+      type: integer
+
+    - name: auth
+      type: keyword
+
+    - name: authtime
+      type: integer
+
+    - name: avscantime
+      type: integer
+
+    - name: cached
+      type: keyword
+
+    - name: cattime
+      type: integer
+
+    - name: device
+      type: keyword
+
+    - name: dnstime
+      type: integer
+
+    - name: exceptions
+      type: keyword
+
+    - name: filteraction
+      type: keyword
+
+    - name: fullreqtime
+      type: integer
+
+    - name: group
+      type: keyword
+
+    - name: id
+      type: keyword
+
+    - name: name
+      type: keyword
+
+    - name: profile
+      type: keyword
+
+    - name: referer
+      type: keyword
+
+    - name: request
+      type: keyword
+
+    - name: size
+      type: integer
+
+    - name: sub
+      type: keyword
+
+    - name: user
+      type: keyword

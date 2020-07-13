@@ -62,6 +62,7 @@ grouped in the following categories:
 * <<exported-fields-redis>>
 * <<exported-fields-s3>>
 * <<exported-fields-santa>>
+* <<exported-fields-sophosutm>>
 * <<exported-fields-suricata>>
 * <<exported-fields-system>>
 * <<exported-fields-traefik>>
@@ -33462,6 +33463,174 @@ type: keyword
 --
 SHA256 hash of code signing certificate.
 
+type: keyword
+
+--
+
+[[exported-fields-sophosutm]]
+== sophosutm fields
+
+sophosutm Module
+
+
+
+[float]
+=== sophosutm
+
+Module for parsing Sophos logs.
+
+
+
+[float]
+=== firewall
+
+Module for parsing Sophos UTM logs.
+
+
+
+*`sophosutm.firewall.ad_domain`*::
++
+--
+type: keyword
+
+--
+
+*`sophosutm.firewall.aptptime`*::
++
+--
+type: integer
+
+--
+
+*`sophosutm.firewall.auth`*::
++
+--
+type: keyword
+
+--
+
+*`sophosutm.firewall.authtime`*::
++
+--
+type: integer
+
+--
+
+*`sophosutm.firewall.avscantime`*::
++
+--
+type: integer
+
+--
+
+*`sophosutm.firewall.cached`*::
++
+--
+type: keyword
+
+--
+
+*`sophosutm.firewall.cattime`*::
++
+--
+type: integer
+
+--
+
+*`sophosutm.firewall.device`*::
++
+--
+type: keyword
+
+--
+
+*`sophosutm.firewall.dnstime`*::
++
+--
+type: integer
+
+--
+
+*`sophosutm.firewall.exceptions`*::
++
+--
+type: keyword
+
+--
+
+*`sophosutm.firewall.filteraction`*::
++
+--
+type: keyword
+
+--
+
+*`sophosutm.firewall.fullreqtime`*::
++
+--
+type: integer
+
+--
+
+*`sophosutm.firewall.group`*::
++
+--
+type: keyword
+
+--
+
+*`sophosutm.firewall.id`*::
++
+--
+type: keyword
+
+--
+
+*`sophosutm.firewall.name`*::
++
+--
+type: keyword
+
+--
+
+*`sophosutm.firewall.profile`*::
++
+--
+type: keyword
+
+--
+
+*`sophosutm.firewall.referer`*::
++
+--
+type: keyword
+
+--
+
+*`sophosutm.firewall.request`*::
++
+--
+type: keyword
+
+--
+
+*`sophosutm.firewall.size`*::
++
+--
+type: integer
+
+--
+
+*`sophosutm.firewall.sub`*::
++
+--
+type: keyword
+
+--
+
+*`sophosutm.firewall.user`*::
++
+--
 type: keyword
 
 --

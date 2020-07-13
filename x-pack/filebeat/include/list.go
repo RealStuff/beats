@@ -36,6 +36,7 @@ import (
 	_ "github.com/elastic/beats/v7/x-pack/filebeat/module/okta"
 	_ "github.com/elastic/beats/v7/x-pack/filebeat/module/panw"
 	_ "github.com/elastic/beats/v7/x-pack/filebeat/module/rabbitmq"
+	_ "github.com/elastic/beats/v7/x-pack/filebeat/module/sophosutm"
 	_ "github.com/elastic/beats/v7/x-pack/filebeat/module/suricata"
 	_ "github.com/elastic/beats/v7/x-pack/filebeat/module/zeek"
 	_ "github.com/elastic/beats/v7/x-pack/filebeat/processors/decode_cef"
